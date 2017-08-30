@@ -1,0 +1,12 @@
+[1mdiff --git a/application/admin/model/Category.php b/application/admin/model/Category.php[m
+[1mindex ba0446e..51e87df 100644[m
+[1m--- a/application/admin/model/Category.php[m
+[1m+++ b/application/admin/model/Category.php[m
+[36m@@ -13,6 +13,7 @@[m [mclass Category extends BaseModel[m
+ {[m
+     protected $autoWriteTimestamp=true;[m
+     protected $hidden = ['create_time','update_time','delete_time','topic_img_id'];[m
+[32m+[m[32m    protected $auto;[m
+     public static function add ($name,$img_id,$summary="")[m
+     {[m
+         $result=self::create(['name'=>$name,'topic_img_id'=>$img_id,'summary'=>$summary]);[m
