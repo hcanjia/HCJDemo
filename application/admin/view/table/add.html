@@ -1,0 +1,21 @@
+<div style="margin: 15px;">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="tableName" required lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">辅助文字</div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-inline">
+                <input type="text" name="remarks"  placeholder="备注，可不填" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">辅助文字</div>
+        </div>
+
+        <button lay-filter="add" lay-submit style="display: none;"></button>
+    </form>
+</div>
+

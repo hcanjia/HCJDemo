@@ -1,0 +1,30 @@
+<div style="margin: 15px;">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" required lay-verify="required" placeholder="请输入" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-inline">
+                <input type="text" name="summary" placeholder="备注，可不填" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="site-demo-upload">
+            <img id="LAY_demo_upload" src="__ADMIN__/images/load.png">
+            <div class="site-demo-upbar">
+                <input type="file" lay-ext="jpg|png|gif" name="file" class="layui-upload-file">
+            </div>
+        </div>
+        <input type="text" id="aaa" name="img" style="display: none">
+        <button lay-filter="add" lay-submit style="display: none;"></button>
+    </form>
+
+</div>
+
+
